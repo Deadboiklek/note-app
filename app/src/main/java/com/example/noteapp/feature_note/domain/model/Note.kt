@@ -6,6 +6,7 @@ import com.example.noteapp.ui.theme.LightGreen
 import com.example.noteapp.ui.theme.RedOrange
 import com.example.noteapp.ui.theme.RedPink
 import com.example.noteapp.ui.theme.Violet
+import java.lang.Exception
 
 @Entity
 data class Note(
@@ -20,3 +21,4 @@ data class Note(
     }
 }
 
+class InvalidNoteException(message: String) : Exception(message)
